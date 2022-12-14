@@ -100,6 +100,7 @@
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label8
             // 
@@ -253,6 +254,7 @@
             this.btnRegister.TabIndex = 16;
             this.btnRegister.Text = "Registrar";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // FormPaciente
             // 

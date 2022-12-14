@@ -1,4 +1,5 @@
 using APF_Hospital.Controller;
+using APF_Hospital.Forms;
 
 namespace APF_Hospital
 {
@@ -9,19 +10,11 @@ namespace APF_Hospital
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnPaciente_Click(object sender, EventArgs e)
         {
-            RegistrarPaciente registrarPaciente = new RegistrarPaciente();
-
-            string nombre = tbNombre.Text;
-            string direccion = tbDireccion.Text;
-            string dni = tbDni.Text;
-            int dIngreso = Convert.ToInt32(tbDingreso.Text);
-            char pronostico = Convert.ToChar(tbPronostico.Text);
-            bool esPaciente = true;
-            bool estaMuerto = false;
-
-            registrarPaciente.registroPaciente(nombre, direccion, dni, dIngreso, pronostico, esPaciente, estaMuerto);
+            FormPaciente formPaciente = new FormPaciente();
+            formPaciente.ShowDialog();
+            this.Hide();
         }
     }
 }
