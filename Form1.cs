@@ -14,7 +14,6 @@ namespace APF_Hospital
         {
             FormPaciente formPaciente = new FormPaciente();
             formPaciente.ShowDialog();
-            this.Hide();
         }
     }
 }
